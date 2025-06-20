@@ -1,0 +1,867 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-size: 100% 100%;
+}
+
+:root {
+  --primray-hover: white;
+  --primray-nextc: #fff;
+  --primray-color: #ffffff;
+  --primray-span: #696969;
+  --primray-background-color: #800080;
+  --primray-font-size: 20px;
+}
+
+
+body {
+  color: black;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #ffff;
+}
+
+header:hover,
+button:hover,
+input:hover {
+  cursor: pointer;
+}
+
+header,
+#header-heading,
+h4,
+button,
+#header-heading,
+#header-icon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  transition: ease-in 1s;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+}
+
+.header-btn {
+  border-radius: 100% 100%;
+}
+
+button:hover {
+  background-color: var(--primray-hover);
+}
+
+.header-btn-1 {
+  background-color: white;
+}
+
+.header-btn-1:hover {
+  background-color: var(--primray-hover);
+}
+
+header {
+  position: sticky;
+  top: 0px;
+}
+
+header>div>img:hover {
+  transform: scale(1.1, 1.1);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+
+}
+
+#nav-designe {
+  background-color: white;
+  border-radius: 30px;
+  width: 950px;
+  height: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 50px;
+  box-shadow: 0px 0px 4px #000000af;
+}
+
+nav div {
+  width: 950px;
+  height: 45px;
+  display: flex;
+  padding: 5px;
+}
+
+#input-div {
+  width: 270px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#search {
+  width: 300px;
+  box-sizing: border-box;
+  border: none;
+  height: 29px;
+  background-color: transparent;
+}
+
+#nav-button {
+  width: 200px;
+  border: none;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.nav-button-left {
+  width: 300px;
+  text-align: left;
+  padding: 0px;
+}
+
+#icon {
+  border-radius: 100% 100%;
+  width: 50px;
+  height: 50px;
+  background-color: #fc7b90;
+  color: #eeecec;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 13px;
+  margin-left: 10px;
+}
+
+#first-top-section {
+  height: 170px;
+  background-color: #fcfcfc;
+  box-shadow: 1px 1px 3px #fcfcfc;
+}
+
+button:hover {
+  background-color: gray;
+}
+
+
+#first-top-section {
+  position: sticky;
+  top: 0px;
+}
+
+#main-flex-card-control {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-around;
+}
+
+#main-flex-card-control>div {
+  width: 250px;
+  border-radius: 20px;
+  background-size: 100% 100%;
+}
+
+#card-heading-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+#card-heading-list span {
+  display: flex;
+  gap: 10px;
+  color: #000;
+  border-radius: 100% 100%;
+}
+
+.img {
+  height: 250px;
+  border-radius: 20px;
+  background-color: var(--primray-background-color);
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+  box-sizing: border-box;
+  padding: 5px;
+  margin-bottom: 7px;
+  color: var(--primray-color);
+}
+
+.img>span {
+  color: var(--primray-nextc);
+}
+
+.cards-1 h3 {
+  margin-top: 7px;
+}
+
+#card-btn {
+  width: 120px;
+  height: 29px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: var(--primray-color);
+  box-shadow: 2px 2px 4px --primray-span;
+  color: --primray-span;
+}
+
+#size-heading {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#card-img-1 {
+  background-image: url(https://i.pinimg.com/750x/c0/7f/16/c07f16752232e7f38a74cb20ad00044e.jpg);
+  background-size: 100% 100%;
+}
+
+#card-img-2 {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcFccOpaZ38T9c2S4xgZHjcZOzbA3ZbtuH2ZrEfqpMY_IUsyygujuKFCEBMkGr7WSZMwY&usqp=CAU);
+  background-size: 100% 100%;
+}
+
+#card-img-3 {
+  background-image: url(https://s3.amazonaws.com/ideas-after/9e9ed179-5856-4039-81fc-71ef856db719.jpeg);
+  background-size: 100% 100%;
+}
+
+#card-img-4 {
+  background-image: url(https://i.pinimg.com/736x/04/e1/52/04e152940c4e0c48faadd7719792b80b.jpg);
+  background-size: 100% 100%;
+}
+
+#card-img-5 {
+  background-image: url(https://i.pinimg.com/736x/95/c5/cc/95c5ccce05b5f50a5c552a68685be0d3.jpg);
+  background-size: 100% 100%;
+}
+
+#card-img-6 {
+  background-image: url(https://i.pinimg.com/736x/c8/73/87/c87387e7bdf96fbe4e18480a3478658e.jpg);
+  background-size: 100% 100%;
+}
+
+#card-img-7 {
+  background-image: url(https://i.pinimg.com/736x/13/7b/42/137b425af6f65699cf64c75f61409226.jpg);
+  background-size: 100% 100%;
+}
+
+#card-img-8 {
+  background-image: url(https://cdn.prod.website-files.com/6334a8d89862a1cc15eae9e1/64dd715e89d024d7aff87471_Cartesian_Install_5_v2.jpg);
+  background-size: 100% 100%;
+}
+
+#card-img-9 {
+  background-image: url(https://cdn.prod.website-files.com/6296aec5884dc4c8a90970a6/65027323747df4a787cf7b36_AdobeStock_268518126.webp);
+  background-size: 100% 100%;
+}
+
+#card-img-10 {
+  background-image: url(https://cdn.prod.website-files.com/6296aec5884dc4c8a90970a6/64dbafb0f61641998661dc31_462eca56.webp);
+  background-size: 100% 100%;
+}
+
+#card-img-11 {
+  background-image: url(https://aiartshop.com/cdn/shop/files/elegant-bedroom-photo-modern-design-in-black-gold-purple-and-beige-at-night-ai-art-431.webp?v=1691001135);
+  background-size: 100% 100%;
+}
+
+#card-img-12 {
+  background-image: url(https://i.pinimg.com/736x/fb/3a/2f/fb3a2fc15841908b4755619164445450.jpg);
+  background-size: 100% 100%;
+}
+
+#card-img-13 {
+  background-image: url(https://fancyhouse-design.com/wp-content/uploads/2024/05/The-minimalist-allure-of-a-sleek-ebony-chamber-for-small-spaces.jpg);
+  background-size: 100% 100%;
+}
+
+#card-img-14 {
+  background-image: url(https://hips.hearstapps.com/hmg-prod/images/bedroom-ideas-67c88156a18e2.jpg?crop=0.668xw:1.00xh;0.167xw,0&resize=640:*);
+  background-size: 100% 100%;
+}
+
+#card-img-15 {
+  background-image: url(https://img.freepik.com/free-vector/bedroom-interior-home-hotel-empty-apartment_1441-3636.jpg?semt=ais_hybrid&w=740);
+  background-size: 100% 100%;
+}
+
+#card-img-16 {
+  background-image: url(https://i.pinimg.com/1200x/14/fa/32/14fa32d7d97e2843cd8d81818077db68.jpg);
+  background-size: 100% 100%;
+}
+
+#card-img-17 {
+  background-image: url(https://hips.hearstapps.com/hmg-prod/images/white-bedroom-ideas-breeze-giannasio-interiors-1631198666.jpeg);
+  background-size: 100% 100%;
+}
+
+#card-img-18 {
+  background-image: url(https://hgtvhome.sndimg.com/content/dam/images/hgtv/fullset/2020/2/28/0/RX_HGMAG078-white-bedrooms-04.jpg.rend.hgtvcom.616.462.85.suffix/1582807598651.webp);
+  background-size: 100% 100%;
+}
+
+#card-img-19 {
+  background-image: url(https://st.hzcdn.com/simgs/pictures/bedrooms/beaulieu-house-by-the-sea-stephanie-dunning-interior-design-img~9ff11612051bd8e9_14-3575-1-1291c2c.jpg);
+  background-size: 100% 100%;
+}
+
+#card-img-20 {
+  background-image: url(https://hips.hearstapps.com/hmg-prod/images/layered-white-bedroom-white-headboard-1585285168.jpg);
+  background-size: 100% 100%;
+}
+
+#card-img-21 {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJlZr-YnhizVP7qFSsxyQKgw4GtgTGrU6ZVx6Anjzo3imj0G4S4ZYyHAiXFvsQ4o1YBeY&usqp=CAU);
+  background-size: 100% 100%;
+}
+
+#last-area-section-footer {
+  background-color: #fcfcfc;
+}
+
+#footer-up-area {
+  align-items: center;
+  display: flexbox;
+  padding: 25px;
+  gap: 20px;
+  margin: 20px;
+  margin-left: 20px;
+}
+
+#footer-up-area>span>a {
+  color: #000;
+  text-decoration: none;
+  margin: 10px;
+}
+
+#footer-up-area>hr {
+  margin-top: 20px;
+}
+
+#footer-ul-list {
+  display: flex;
+  justify-content: left;
+  padding-left: 50px;
+  flex-direction: row;
+  column-gap: 210px;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+
+#footer-ul-list>a {
+  list-style: none;
+  text-decoration: none;
+  color: #000;
+}
+
+#footer-li-span {
+  color: #696969b4;
+}
+
+#footer-ul-selected {
+  width: 150px;
+  border: none;
+  padding: 0px;
+}
+
+footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 300px;
+  margin: 20px;
+  margin-left: 30px;
+  column-gap: 300px;
+}
+
+#footer-start-li>li {
+  list-style-position: inside;
+  text-align: left;
+}
+
+footer ul div h4 {
+  padding: 0px;
+}
+
+#footer-ul-list-bottom div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  row-gap: 30px;
+  margin: 20px;
+}
+
+footer>ul>div>a>li {
+  color: #000;
+}
+
+footer>ul>div>a {
+  text-decoration: none;
+  font-size: smaller;
+}
+
+#footer-end-copy-right {
+  gap: 30px;
+  display: flex;
+  padding: 20px;
+  margin: 20px;
+}
+
+#left-footer-area {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-size: 100% 100%;
+}
+
+:root {
+  --primray-hover: white;
+  --primray-nextc: #fff;
+  --primray-color: #ffffff;
+  --primray-span: #696969;
+  --primray-background-color: #800080;
+  --primray-font-size: 20px;
+}
+
+body {
+  color: black;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #ffff;
+}
+
+/* Cursor hover effects */
+header:hover,
+button:hover,
+input:hover {
+  cursor: pointer;
+}
+
+/* Header styles */
+header,
+#header-heading,
+h4,
+button,
+#header-heading,
+#header-icon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  transition: ease-in 1s;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+}
+
+.header-btn {
+  border-radius: 100% 100%;
+}
+
+button:hover {
+  background-color: var(--primray-hover);
+}
+
+.header-btn-1 {
+  background-color: white;
+}
+
+.header-btn-1:hover {
+  background-color: var(--primray-hover);
+}
+
+/* Sticky header */
+header {
+  position: sticky;
+  top: 0px;
+  background-color: #fff; /* To prevent background issues on scroll */
+  z-index: 999; /* Stay above other content */
+}
+
+/* Header logo hover effect */
+header>div>img:hover {
+  transform: scale(1.1);
+}
+
+/* Navigation styles */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+#nav-designe {
+  background-color: white;
+  border-radius: 30px;
+  width: 95%; /* Make it responsive */
+  max-width: 950px;
+  height: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  box-shadow: 0px 0px 4px #000000af;
+  margin: 10px auto; /* Center container on smaller screens */
+}
+
+nav div {
+  width: 100%; /* Full width on small screens */
+  height: auto;
+  display: flex;
+  padding: 5px;
+  flex-wrap: wrap;
+}
+
+/* Search input container */
+#input-div {
+  flex: 1 1 200px; /* Grow and shrink with min width */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#search {
+  width: 100%; /* Full width on small screens */
+  max-width: 300px;
+  box-sizing: border-box;
+  border: none;
+  height: 29px;
+  background-color: transparent;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+/* Navigation buttons */
+#nav-button {
+  width: 100%; /* Full width on small screens */
+  max-width: 200px;
+  border: none;
+  border-radius: 20px;
+  background-color: white;
+  padding: 10px;
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.nav-button-left {
+  width: 100%; /* Full width on small screens */
+  max-width: 300px;
+  text-align: left;
+  padding: 10px;
+}
+
+#icon {
+  border-radius: 100% 100%;
+  width: 50px;
+  height: 50px;
+  background-color: #fc7b90;
+  color: #eeecec;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 13px;
+  margin-left: 10px;
+}
+
+/* Top section styles */
+#first-top-section {
+  height: 170px;
+  background-color: #fcfcfc;
+  box-shadow: 1px 1px 3px #fcfcfc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+}
+
+/* Cards section styles */
+#second-card-section-first {
+  padding: 20px;
+  margin: 20px 0;
+}
+
+/* Card header list style */
+#card-heading-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+#card-heading-list span {
+  display: flex;
+  gap: 10px;
+  color: #000;
+  border-radius: 100% 100%;
+}
+
+#card-heading-list button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Main flex container for cards */
+#main-flex-card-control {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* Individual card styles */
+.cards-1 {
+  width: 250px;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s;
+}
+
+.cards-1:hover {
+  transform: scale(1.02);
+}
+
+#card-img-1,
+#card-img-2,
+#card-img-3,
+#card-img-4,
+#card-img-5,
+#card-img-6,
+#card-img-7,
+#card-img-8,
+#card-img-9,
+#card-img-10,
+#card-img-11,
+#card-img-12,
+#card-img-13,
+#card-img-14,
+#card-img-15,
+#card-img-16,
+#card-img-17,
+#card-img-18,
+#card-img-19,
+#card-img-20,
+#card-img-21 {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Buttons inside cards */
+#card-btn {
+  width: 120px;
+  height: 29px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--primray-color);
+  color: var(--primray-span);
+  cursor: pointer;
+  margin: 10px auto;
+  display: block;
+  font-size: 14px;
+  box-shadow: 2px 2px 4px var(--primray-span);
+}
+
+/* Text inside cards */
+h5 {
+  padding: 0 10px 10px 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Responsive adjustments via media queries */
+@media (max-width: 1024px) {
+  /* Tablet styles */
+  #header-heading,
+  #header-icon,
+  #nav-designe {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  #nav-designe {
+    padding: 10px;
+    max-width: 100%;
+  }
+
+  #main-flex-card-control {
+    justify-content: center;
+  }
+
+  /* Make cards full width on tablets */
+  .cards-1 {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  /* Adjust card image height for tablets */
+  #card-img-1,
+  #card-img-2,
+  #card-img-3,
+  #card-img-4,
+  #card-img-5,
+  #card-img-6,
+  #card-img-7,
+  #card-img-8,
+  #card-img-9,
+  #card-img-10,
+  #card-img-11,
+  #card-img-12,
+  #card-img-13,
+  #card-img-14,
+  #card-img-15,
+  #card-img-16,
+  #card-img-17,
+  #card-img-18,
+  #card-img-19,
+  #card-img-20,
+  #card-img-21 {
+    height: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Mobile styles */
+  #header-heading,
+  #header-icon,
+  #nav-designe {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  #search {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  #nav-button {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  #icon {
+    width: 40px;
+    height: 40px;
+    padding-top: 10px;
+  }
+
+  /* Stack nav buttons vertically */
+  #nav-designe {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  /* Cards full width */
+  .cards-1 {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  /* Reduce card image height for small screens */
+  #card-img-1,
+  #card-img-2,
+  #card-img-3,
+  #card-img-4,
+  #card-img-5,
+  #card-img-6,
+  #card-img-7,
+  #card-img-8,
+  #card-img-9,
+  #card-img-10,
+  #card-img-11,
+  #card-img-12,
+  #card-img-13,
+  #card-img-14,
+  #card-img-15,
+  #card-img-16,
+  #card-img-17,
+  #card-img-18,
+  #card-img-19,
+  #card-img-20,
+  #card-img-21 {
+    height: 150px;
+  }
+
+  /* Reduce font sizes for smaller screens */
+  #card-heading-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #card-heading-list span {
+    justify-content: center;
+  }
+}
+
+/* Footer responsiveness */
+@media(max-width: 1024px) {
+  #footer-ul-list {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+  }
+
+  #footer-ul-list-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Additional adjustments for small screens */
+@media(max-width: 480px) {
+  /* Simplify footer */
+  #footer-end-copy-right {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Reduce padding/margin for footer links */
+  #footer-up-area {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Make footer links more touch-friendly */
+  #footer-ul-list a {
+    padding: 10px;
+  }
+}

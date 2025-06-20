@@ -1,0 +1,80 @@
+:root {
+  --primray-color: #ff0000;
+  --primray-span: #696969;
+  --primray-background-color: #800080;
+  --primray-font-size: 20px;
+}
+
+#main-flex-card-control {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-around;
+}
+#main-flex-card-control > div {
+  width: 250px;
+  border-radius: 20px;
+  background-size: 100% 100%;
+}
+
+.img {
+  height: 300px;
+  border-radius: 20px;
+  background-color: var(--primray-background-color);
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+  box-sizing: border-box;
+  padding: 4px;
+  color: var(--primray-color);
+}
+.cards-1 h3 {
+  margin-top: 7px;
+}
+button {
+  width: 120px;
+  height: 29px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: var(--primray-color);
+  box-shadow: 2px 2px 4px --primray-span;
+  color: --primray-span;
+}
+
+#size-heading {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#card-img-1 {
+  background-image: url(./mr_beast1-removebg-preview.png);
+  background-size: 100% 100%;
+}
+
+#card-img-2 {
+  background-image: url(./png1.png);
+  background-size: 100% 100%;
+}
+#card-img-3 {
+  background-image: url(./png2.png);
+  background-size: 100% 100%;
+}
+#card-img-4 {
+  background-image: url(./png3.png);
+  background-size: 100% 100%;
+}
+#card-img-5 {
+  background-image: url(./png4.png);
+  background-size: 100% 100%;
+}
+
+#card-img-6 {
+  background-image: url(./png6.png);
+  background-size: 100% 100%;
+}
+#card-img-7 {
+  background-image: url(./man-standing-near-green-leaves.jpg);
+  background-size: 100% 100%;
+}

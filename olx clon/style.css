@@ -1,0 +1,294 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav,
+nav>div,
+nav>div>h1 {
+  display: flex;
+  gap: 15px;
+  justify-content: space-around;
+  background-color: #ebf1ff;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 3px;
+  font-family: monospace;
+}
+
+#main-heading-olx {
+  font-size: 40px;
+  font-weight: 800;
+  color: blue;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#nav-images {
+  margin-top: 10px;
+}
+
+nav>div>h1>span {
+  padding-bottom: 7px;
+  font-size: 22px;
+}
+
+#h1-login {
+  border-bottom: 2px solid black;
+  font-size: medium;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+button>span {
+  padding-bottom: 20px;
+}
+
+#nav-button-area>button {
+  width: 120px;
+  height: 33px;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: 800;
+  border-top: 5px solid cyan;
+  border-left: 5px solid yellow;
+  border-right: 5px solid cyan;
+  border-bottom: 5px solid blue;
+  border-color: linear-gradient(45deg, red, yellow, cyan);
+}
+
+header {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 3px;
+  font-family: monospace;
+}
+
+#select-location {
+  width: 300px;
+  height: 41px;
+  font-size: 16px;
+  padding-left: 30px;
+  border-radius: 7px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+#head-area-input>input {
+  width: 850px;
+  border: 1px solid blue;
+  padding-left: 10px;
+  border-radius: 5px;
+  height: 41px;
+  min-width: 10%;
+  max-width: 70%;
+
+}
+
+#head-area-input>button {
+  width: 100px;
+  height: 36px;
+  background-color: rgb(0, 0, 48);
+  color: #ffff;
+}
+
+#select-categori {
+  height: 35px;
+  font-size: 16px;
+  padding-left: 30px;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+#header-categori {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 3px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 400;
+}
+
+#header-categori>div,
+#header-categori>h2 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-size: 19px;
+}
+
+#header-div-categri,
+#header-div-categri>h2 {
+  font-size: 18px;
+  font-weight: 400;
+  gap: 10px;
+}
+
+#banner-section {
+  display: flex;
+  justify-content: space-around;
+}
+
+section>#banner-images {
+  width: 1300px;
+  height: 200px;
+  background-color: black;
+  border-radius: 20px;
+  background-image: url(https://images.olx.com.pk/thumbnails/527654309-800x600.webp);
+  background-size: 100% 100%;
+}
+
+#boxes-section {
+  display: flex;
+  width: 67%;
+  justify-content: left;
+  margin-left: 320px;
+  text-align: center;
+  align-items: center;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  column-gap: 45px;
+  row-gap: 20px;
+}
+
+#boxes-section>.box {
+  width: 100px;
+  height: 100px;
+  background-size: 100% 100%;
+  background-color: #f2f4f5;
+  border-radius: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#cards-section {
+  width: 1250px;
+  height: 320px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 320px;
+  column-gap: 10px;
+  row-gap: 30px;
+  justify-content: center;
+
+}
+
+#card-heading-set-div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 330px;
+  padding-right: 330px;
+}
+
+.cards {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+}
+
+.img-cards {
+  width: 300px;
+  height: 150px;
+  background-size: 100%;
+
+}
+
+.details-heading {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 70px;
+  justify-content: left;
+  padding: 10px;
+}
+
+.details-product-bio {
+  padding: 10px;
+
+}
+
+#details-product-bio-location {
+  color: grey;
+  font-weight: 200;
+}
+
+#details-product-bio-time {
+  font-weight: 200;
+  font-size: small;
+}
+
+#images-cards-1 {
+  background-image: url(https://asia-exstatic-vivofs.vivo.com/PSee2l50xoirPK7y/1555559683818/7727e1e22c4c569d15663bda34431d03.png);
+}
+
+#images-cards-2 {
+  background-image: url(https://www.winstore.pk/cdn/shop/products/QjLFaeJKbs.jpg?v=1640450153);
+}
+
+#images-cards-3 {
+  background-image: url(https://whatmobiles.net.pk/wp-content/uploads/2025/01/Oppo-A60-Price-in-Pakistan.webp);
+}
+
+#images-cards-4 {
+  background-image: url(https://www.mega.pk/items_images/Oppo+A3s+4G+Mobile+2GB+RAM+16GB+Storage+Price+in+Pakistan%2C+Specifications%2C+Features_-_18179.webp);
+}
+
+#images-cards-5 {
+  background-image: url(https://d13pvy8xd75yde.cloudfront.net/global/spark-30c-5g/KL8H_bai.png);
+}
+
+#images-cards-6 {
+  background-image: url(https://myshop.pk/pub/media/catalog/product/cache/26f8091d81cea4b38d820a1d1a4f62be/o/n/one-plus_nord3_-myshop-pk-1.jpg);
+}
+
+#images-cards-7 {
+  background-image: url(https://cellmart.pk/wp-content/uploads/2024/08/pixel-9-pro-xl-cellmart-31.jpg);
+}
+
+#images-cards-8 {
+  background-image: url(https://store.dcode.com.pk/cdn/shop/files/Cygnal-3-pro_533x.webp?v=1692972387);
+}
+
+#images-cards-9 {
+  background-image: url();
+}
+
+#ads-section-card-1 {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+section>#ads-images {
+  width: 1300px;
+  height: 300px;
+  background-color: black;
+  border-radius: 20px;
+  background-image: url(https://t2.tudocdn.net/520690?w=1920);
+  background-size: 100% 100%;
+}
+
+#last-developer-connect h1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+  font-size: medium;
+}
+
+#last-developer-connect>h2 {
+  font-size: medium;
+  justify-content: center;
+  text-align: center;
+}
