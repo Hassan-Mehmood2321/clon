@@ -1,0 +1,17 @@
+ .light {
+     background-color: #ffffff;
+     color: #000000;
+ }
+
+ .dark {
+     background-color: #121212;
+     color: #ffffff;
+ }
+
+
+ h1{
+    font-size: 90px;
+    text-align: center;
+    background-color: aqua;
+    color: purple;
+ }

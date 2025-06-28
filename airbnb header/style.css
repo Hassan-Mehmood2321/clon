@@ -1,0 +1,24 @@
+.main-contaner {
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+    flex-wrap: wrap;
+}
+
+.mid {
+    display: flex;
+    gap: 20px;
+}
+
+.items {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
