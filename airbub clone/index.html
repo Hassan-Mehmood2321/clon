@@ -24,14 +24,14 @@
         src="https://th.bing.com/th/id/R.9f7fd421c07af010f7c91e41951fd4f9?rik=b7Mp4vIn8j6Gtg&riu=http%3a%2f%2ftous-logos.com%2fwp-content%2fuploads%2f2018%2f02%2fAirbnb-Logo.png&ehk=E96d%2fKlrO%2bkFKIFBgcXRYczMbCvrFgzyYAMmoKlGEgM%3d&risl=&pid=ImgRaw&r=0"
         width="130px" alt="" />
       <div id="header-heading">
-        <img
+        <img id="header-img"
           src="https://th.bing.com/th/id/R.106a8bdbace0bdc5f17da04932387da8?rik=HXJ5FsZ36GqVNw&riu=http%3a%2f%2fpngimg.com%2fuploads%2fhouse%2fhouse_PNG39.png&ehk=ktR3fDWavjI9P8ZSVKDTphdFh0wcwN3gNFl4ZdKjA30%3d&risl=&pid=ImgRaw&r=0"
           width="60px" height="60px" alt="" />
         <h4>Homes</h4>
-        <img src="https://th.bing.com/th/id/OIP.kI0en4Fxb4aTpp_i0_d55gHaJp?r=0&rs=1&pid=ImgDetMain&cb=idpwebp1&o=7&rm=3"
-          width="60px" height="60px" alt="" style="mix-blend-mode: color-burn;" />
+        <img id="header-img" src="parrashot.png" width="60px" height="60px" alt="" />
         <h4>Services</h4>
-        <img src="https://cdn-icons-png.flaticon.com/512/3378/3378756.png" height="60px" width="60px" alt="" />
+        <img id="header-img" src="https://cdn-icons-png.flaticon.com/512/3378/3378756.png" height="60px" width="60px"
+          alt="" />
         <h4>Experinec</h4>
       </div>
       <div id="header-icon">
@@ -47,7 +47,7 @@
     <nav>
       <div id="nav-designe">
         <div id="input-div">
-          <label for="search">Where</label>
+          <label for="search" id="label-header">Where</label>
           <input type="text" name="search" id="search" placeholder="Seach Destination" />
         </div>
         <button id="nav-button">
@@ -67,6 +67,7 @@
     </nav>
   </section>
   <!-- head done -->
+  <input type="checkbox" class="mode-toggle l" onclick="toggleMode()">
   <!-- card section start first list -->
   <section id="second-card-section-first">
     <h3 id="card-heading-list">Popular home in islamabad >
@@ -82,7 +83,7 @@
       <!-- open  -->
       <div class="cards-1">
         <div class="img" id="card-img-1">
-          <button id="card-btn">Guest Faveroitr</button><span>❤</span>
+          <button id="card-btn">Guest Faveroitr</button><span id="heart-hover">❤</span>
         </div>
         <h5>
           Guest suite in Islamabad
@@ -94,7 +95,7 @@
       <!-- open  -->
       <div class="cards-1">
         <div class="img" id="card-img-2">
-          <button id="card-btn">Guest Faveroitr</button><span>❤</span>
+          <button id="card-btn">Guest Faveroitr</button><span id="heart-hover">❤</span>
         </div>
         <h5>
           Condo in Islamabad
@@ -106,7 +107,7 @@
       <!-- open  -->
       <div class="cards-1">
         <div class="img" id="card-img-3">
-          <button id="card-btn">Guest Faveroitr</button><span>❤</span>
+          <button id="card-btn">Guest Faveroitr</button><span id="heart-hover">❤</span>
         </div>
         <h5>
           Apartment in Islamabad
@@ -118,7 +119,7 @@
       <!-- open  -->
       <div class="cards-1">
         <div class="img" id="card-img-4">
-          <button id="card-btn">Guest Faveroitr</button><span>❤</span>
+          <button id="card-btn">Guest Faveroitr</button><span id="heart-hover">❤</span>
         </div>
         <h5>
           Apartment in Islamabad <br />
@@ -129,7 +130,7 @@
       <!-- open  -->
       <div class="cards-1">
         <div class="img" id="card-img-5">
-          <button id="card-btn">Guest Faveroitr</button><span>❤</span>
+          <button id="card-btn">Guest Faveroitr</button><span id="heart-hover">❤</span>
         </div>
         <h5>
           Apartment in Islamabad<br />
@@ -140,7 +141,7 @@
       <!-- open  -->
       <div class="cards-1">
         <div class="img" id="card-img-6">
-          <button id="card-btn">Guest Faveroitr</button><span>❤</span>
+          <button id="card-btn">Guest Faveroitr</button><span id="heart-hover">❤</span>
         </div>
         <h5>
           Home in Islamabad <br />
@@ -151,7 +152,7 @@
       <!-- open  -->
       <div class="cards-1">
         <div class="img" id="card-img-7">
-          <button id="card-btn">Guest Faveroitr</button><span>❤</span>
+          <button id="card-btn">Guest Faveroitr</button><span id="heart-hover">❤</span>
         </div>
         <h5>
           Condo in Islamabad <br />
@@ -177,7 +178,7 @@
       <!-- open  -->
       <div class="cards-1">
         <div class="img" id="card-img-8">
-          <button id="card-btn">Guest Faveroitr</button><span>❤</span>
+          <button id="card-btn">Guest Faveroitr</button><span id="heart-hover">❤</span>
         </div>
         <h5>
           Room in Lahore
@@ -189,7 +190,7 @@
       <!-- open  -->
       <div class="cards-1">
         <div class="img" id="card-img-9">
-          <button id="card-btn">Guest Faveroitr</button><span>❤</span>
+          <button id="card-btn">Guest Faveroitr</button><span id="heart-hover">❤</span>
         </div>
         <h5>
           Apartment in Lahore
@@ -201,7 +202,7 @@
       <!-- open  -->
       <div class="cards-1">
         <div class="img" id="card-img-10">
-          <button id="card-btn">Guest Faveroitr</button><span>❤</span>
+          <button id="card-btn">Guest Faveroitr</button><span id="heart-hover">❤</span>
         </div>
         <h5>
           Apartment in Lahore
@@ -213,7 +214,7 @@
       <!-- open  -->
       <div class="cards-1">
         <div class="img" id="card-img-11">
-          <button id="card-btn">Guest Faveroitr</button><span>❤</span>
+          <button id="card-btn">Guest Faveroitr</button><span id="heart-hover">❤</span>
         </div>
         <h5>
           Condo in Lahore <br />
@@ -224,7 +225,7 @@
       <!-- open  -->
       <div class="cards-1">
         <div class="img" id="card-img-12">
-          <button id="card-btn">Guest Faveroitr</button><span>❤</span>
+          <button id="card-btn">Guest Faveroitr</button><span id="heart-hover">❤</span>
         </div>
         <h5>
           Condo in Lahore<br />
@@ -235,7 +236,7 @@
       <!-- open  -->
       <div class="cards-1">
         <div class="img" id="card-img-13">
-          <button id="card-btn">Guest Faveroitr</button><span>❤</span>
+          <button id="card-btn">Guest Faveroitr</button><span id="heart-hover">❤</span>
         </div>
         <h5>
           Condo in Lahore<br />
@@ -246,7 +247,7 @@
       <!-- open  -->
       <div class="cards-1">
         <div class="img" id="card-img-14">
-          <button id="card-btn">Guest Faveroitr</button><span>❤</span>
+          <button id="card-btn">Guest Faveroitr</button><span id="heart-hover">❤</span>
         </div>
         <h5>
           Room in Lahore<br />
@@ -272,7 +273,7 @@
       <!-- open  -->
       <div class="cards-1">
         <div class="img" id="card-img-15">
-          <button id="card-btn">Guest Faveroitr</button><span>❤</span>
+          <button id="card-btn">Guest Faveroitr</button><span id="heart-hover">❤</span>
         </div>
         <h5>
           Guest suite in Al Jafiliya
@@ -284,7 +285,7 @@
       <!-- open  -->
       <div class="cards-1">
         <div class="img" id="card-img-16">
-          <button id="card-btn">Guest Faveroitr</button><span>❤</span>
+          <button id="card-btn">Guest Faveroitr</button><span id="heart-hover">❤</span>
         </div>
         <h5>
           Guest suite in Al Jafiliya
@@ -296,7 +297,7 @@
       <!-- open  -->
       <div class="cards-1">
         <div class="img" id="card-img-17">
-          <button id="card-btn">Guest Faveroitr</button><span>❤</span>
+          <button id="card-btn">Guest Faveroitr</button><span id="heart-hover">❤</span>
         </div>
         <h5>
           Apartment in Downtown Dubai
@@ -308,7 +309,7 @@
       <!-- open  -->
       <div class="cards-1">
         <div class="img" id="card-img-18">
-          <button id="card-btn">Guest Faveroitr</button><span>❤</span>
+          <button id="card-btn">Guest Faveroitr</button><span id="heart-hover">❤</span>
         </div>
         <h5>
           Apartment in Downtown Dubai<br />
@@ -319,7 +320,7 @@
       <!-- open  -->
       <div class="cards-1">
         <div class="img" id="card-img-19">
-          <button id="card-btn">Guest Faveroitr</button><span>❤</span>
+          <button id="card-btn">Guest Faveroitr</button><span id="heart-hover">❤</span>
         </div>
         <h5>
           Apartment in Downtown Dubai<br />
@@ -330,7 +331,7 @@
       <!-- open  -->
       <div class="cards-1">
         <div class="img" id="card-img-20">
-          <button id="card-btn">Guest Faveroitr</button><span>❤</span>
+          <button id="card-btn">Guest Faveroitr</button><span id="heart-hover">❤</span>
         </div>
         <h5>
           Villa in Dubai
@@ -343,7 +344,7 @@
       <!-- open  -->
       <div class="cards-1">
         <div class="img" id="card-img-21">
-          <button id="card-btn">Guest Faveroitr</button><span>❤</span>
+          <button id="card-btn">Guest Faveroitr</button><span id="heart-hover">❤</span>
         </div>
         <h5>
           Apartment in Marsa Dubai
@@ -519,7 +520,11 @@
     </footer>
   </section>
   <!-- done -->
-
+  <script>
+    function toggleMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
 </body>
 
 </html>

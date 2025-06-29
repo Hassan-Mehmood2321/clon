@@ -47,6 +47,19 @@ button,
   transition: ease-in 1s;
 }
 
+.dark-mode header,
+.dark-mode nav,
+.dark-mode footer,
+.dark-mode section li,
+.dark-mode footer,
+.dark-mode section li,
+.dark-mode #last-area-section-footer,
+.dark-mode #first-top-section,
+hr {
+  background-color: black;
+  color: #fff;
+}
+
 button {
   border: none;
   border-radius: 10px;
@@ -424,4 +437,218 @@ footer>ul>div>a {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.mode-toggle {
+  position: fixed;
+  top: 130px;
+  right: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  z-index: 9999;
+  transition: background-color 0.3s;
+}
+
+.mode-toggle:hover {
+  background-color: #555;
+}
+
+* {
+  transition: all 0.3s ease;
+}
+
+.cards-1:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.l {
+  display: block;
+  margin-bottom: 1.5em;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.l {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 0.75em;
+  box-shadow: 0.125em 0.125em 0 0.125em rgba(0, 0, 0, 0.3) inset;
+  color: #fdea7b;
+  display: inline-flex;
+  align-items: center;
+  margin: auto;
+  padding: 0.15em;
+  width: 3em;
+  height: 1.5em;
+  transition:
+    background-color 0.1s 0.3s ease-out,
+    box-shadow 0.1s 0.3s ease-out;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.l:before,
+.l:after {
+  content: "";
+  display: block;
+}
+
+.l:before {
+  background-color: #d7d7d7;
+  border-radius: 50%;
+  width: 1.2em;
+  height: 1.2em;
+  transition:
+    background-color 0.1s 0.3s ease-out,
+    transform 0.3s ease-out;
+  z-index: 1;
+}
+
+.l:after {
+  background:
+    linear-gradient(transparent 50%, rgba(0, 0, 0, 0.15) 0) 0 50% / 50% 100%,
+    repeating-linear-gradient(90deg, #bbb 0, #bbb, #bbb 20%, #999 20%, #999 40%) 0 50% / 50% 100%,
+    radial-gradient(circle at 50% 50%, #888 25%, transparent 26%);
+  background-repeat: no-repeat;
+  border: 0.25em solid transparent;
+  border-left: 0.4em solid #d8d8d8;
+  border-right: 0 solid transparent;
+  transition:
+    border-left-color 0.1s 0.3s ease-out,
+    transform 0.3s ease-out;
+  transform: translateX(-22.5%);
+  transform-origin: 25% 50%;
+  width: 1.2em;
+  height: 1em;
+  box-sizing: border-box;
+}
+
+.l:checked {
+  background-color: rgba(0, 0, 0, 0.45);
+  box-shadow: 0.125em 0.125em 0 0.125em rgba(0, 0, 0, 0.1) inset;
+}
+
+.l:checked:before {
+  background-color: currentColor;
+  transform: translateX(125%);
+}
+
+.l:checked:after {
+  border-left-color: currentColor;
+  transform: translateX(-2.5%) rotateY(180deg);
+}
+
+.l:focus {
+  outline: 0;
+}
+
+#heart-hover:hover {
+  color: red;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+
+  #nav-designe,
+  nav div,
+  #input-div,
+  #main-flex-card-control,
+  #footer-ul-list,
+  #footer-ul-list-bottom,
+  #left-footer-area {
+    flex-direction: column;
+    align-items: center;
+    width: 100% !important;
+    padding: 10px;
+  }
+
+  #search,
+  #nav-button {
+    width: 100% !important;
+    margin: 5px 0;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #nav-designe {
+    display: none;
+  }
+
+  nav {
+    display: none;
+  }
+
+  #first-top-section {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    height: 100px;
+    top: 0px;
+    width: 100%;
+  }
+
+  header {
+    justify-content: center;
+    position: sticky;
+    top: 10px;
+  }
+
+  #first-top-section h4 {
+    visibility: hidden;
+    font-size: small;
+  }
+
+  #first-top-section #header-img {
+    visibility: hidden;
+  }
+
+  .mode-toggle {
+    top: 32px;
+    left: 370px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #first-top-section {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    height: 100px;
+    top: 0px;
+    width: 100%;
+  }
+
+  header {
+    justify-content: center;
+    position: sticky;
+    top: 10px;
+  }
+
+  #first-top-section h4 {
+    visibility: hidden;
+    font-size: small;
+  }
+
+  #first-top-section #header-img {
+    visibility: hidden;
+  }
+
+  .mode-toggle {
+    top: 32px;
+    left: 370px;
+  }
 }
