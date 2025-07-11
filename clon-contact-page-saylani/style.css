@@ -31,12 +31,10 @@ label {
     justify-content: center;
     align-items: center;
     background-color: #0f2d6b;
-    max-width: 500px;
 
 }
 
 input {
-    max-width: 480px;
     width: 500px;
     height: 34px;
 }
@@ -191,4 +189,16 @@ input {
 .responsive-image {
     width: 1200px;
     height: 990px;
+}
+
+@media screen and (max-width:900px) {
+
+    .form {
+        width: 100%;
+
+    }
+
+    .responsive-image{
+        
+    }
 }
