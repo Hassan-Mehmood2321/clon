@@ -1,22 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 .form {
-    height: 990px;
-    justify-content: center;
+    width: 100%;
     display: flex;
+    text-align: center;
+    justify-content: space-around;
     flex-direction: column;
-    row-gap: 4px;
     background-color: #002062;
     padding: 60px;
     box-sizing: border-box;
-    width: 500px;
     text-align: center;
-    border-radius: 20px 0px 0px 20px;
     font-family: "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.form .inputForm {
+    margin-left: 50px;
+    padding: 2px;
+}
+
+label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0f2d6b;
+    max-width: 500px;
+
+}
+
+input {
+    max-width: 480px;
+    width: 500px;
+    height: 34px;
+}
+
+#password-size {
+    width: 480px;
 }
 
 .login-h1 {
@@ -31,21 +57,16 @@ body {
 }
 
 .form button {
-    align-self: flex-end;
-}
-
-.flex-column>label {
-    color: #f1f1f1;
-    font-weight: 600;
+    align-self: center;
 }
 
 .inputForm {
     border: 1.5px solid #0f2d6b;
     border-radius: 10px;
     height: 50px;
+    max-width: 500px;
     display: flex;
     align-items: center;
-    padding-left: 10px;
     transition: 0.2s ease-in-out;
     background-color: #0f2d6b;
 }
@@ -73,7 +94,7 @@ body {
     flex-direction: row;
     align-items: center;
     gap: 10px;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .flex-row>div>label {
@@ -108,8 +129,9 @@ body {
     border-radius: 10px;
     height: 50px;
     font-family: 'Gilroy-SemiBold';
-    width: 100%;
     cursor: pointer;
+    max-width: 500px;
+    min-width: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -139,6 +161,11 @@ body {
     transition: 0.2s ease-in-out;
 }
 
+.btn-size {
+    justify-content: center;
+    max-width: 500px;
+}
+
 #facebook {
     color: #C1B6B6;
     padding-left: 4px;
@@ -161,49 +188,7 @@ body {
     color: #4671C6;
 }
 
-.side-img .responsive-image {
-    border-radius: 0px 20px 20px 0px;
-}
-
-@media (max-width: 750px) {
-    .responsive-image {
-        display: none;
-        width: 100%;
-        visibility: none;
-    }
-}
-
-@media (max-width: 650px) {
-
-    .form {
-        height: 650px;
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
-        row-gap: 4px;
-        background-color: #002062;
-        padding: 60px;
-        box-sizing: border-box;
-        width: 450px;
-        text-align: center;
-        border-radius: 20px 0px 0px 20px;
-        font-family: "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
-    }
-}
-
-@media (max-width: 900px) {
-    .form {
-        height: 800px;
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
-        row-gap: 4px;
-        background-color: #002062;
-        padding: 60px;
-        box-sizing: border-box;
-        width: 450px;
-        text-align: center;
-        border-radius: 20px 0px 0px 20px;
-        font-family: "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
-    }
+.responsive-image {
+    width: 1200px;
+    height: 990px;
 }
