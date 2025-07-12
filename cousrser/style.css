@@ -1,0 +1,86 @@
+body {
+    cursor: hidden;
+    background: #000;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.5;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-image: linear-gradient(45deg, #000000, #111);
+    background-size: 200% 200%;
+    animation: gradient 20s ease infinite;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    -ms-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    -o-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 255, 255, 0.1);
+    transition: background 0.5s ease, box-shadow 0.5s ease;
+    -webkit-transition: background 0.5s ease, box-shadow 0.5s ease;
+    -moz-transition: background 0.5s ease, box-shadow 0.5s ease;
+    -ms-transition: background 0.5s ease, box-shadow 0.5s ease;
+    -o-transition: background 0.5s ease, box-shadow 0.5s ease;
+    filter: contrast(1.2) brightness(0.9);
+    -webkit-filter: contrast(1.2) brightness(0.9);
+    -moz-filter: contrast(1.2) brightness(0.9);
+    -ms-filter: contrast(1.2) brightness(0.9);
+    -o-filter: contrast(1.2) brightness(0.9);
+    filter: contrast(1.2) brightness(0.9);
+    -webkit-filter: contrast(1.2) brightness(0.9);
+    -moz-filter: contrast(1.2) brightness(0.9);
+    -ms-filter: contrast(1.2) brightness(0.9);
+    -o-filter: contrast(1.2) brightness(0.9);
+
+
+
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+#courser {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+.light {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 10px;
+    height: 10px;
+    box-shadow: 1px 1px 10px 50px rgb(255, 0, 0);
+    border-radius: 100%;
+    animation: light 2s infinite alternate;
+    filter: blur(30px);
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" stroke="%23ffffff" fill="%23ffffff" width="10px" height="10px" viewBox="0 0 10.04 10.04"><circle cx="5.02" cy="5.02" r="4.52"/></svg>') 5 5, auto;
+}
