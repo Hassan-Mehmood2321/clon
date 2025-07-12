@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    background-color: #002062;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1400px;
+    height: 100%;
+}
+
+.form {
+    flex: 1;
+    padding: 60px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #002062;
+    color: white;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.login-h1 {
+    font-size: 28px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+.inputForm {
+    width: 100%;
+    max-width: 500px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding: 0 15px;
+    border-radius: 10px;
+    background-color: #0f2d6b;
+    border: 1.5px solid #0f2d6b;
+}
+
+.inputForm img {
+    width: 20px;
+    height: 20px;
+}
+
+.input {
+    border: none;
+    background-color: #0f2d6b;
+    color: white;
+    margin-left: 10px;
+    flex: 1;
+    height: 100%;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.inputForm:focus-within {
+    border-color: #4671C6;
+}
+
+.eye-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: #9B9B9B;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 500px;
+    margin: 10px 0;
+}
+
+.span {
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.button-submit {
+    width: 100%;
+    max-width: 500px;
+    background-color: #4671C6A6;
+    color: white;
+    font-size: 18px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.or {
+    margin: 10px 0;
+    color: white;
+    font-size: 14px;
+}
+
+.btn {
+    width: 100%;
+    max-width: 500px;
+    height: 50px;
+    background-color: #0f2d6b;
+    border: 1px solid #0f2d6b;
+    color: #C1B6B6;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    border-color: #2d79f3;
+}
+
+#facebook {
+    padding-left: 5px;
+}
+
+.bottom-text {
+    font-size: 14px;
+    color: #9B9B9B;
+    margin-top: 20px;
+}
+
+#textAccount {
+    color: #4671C6;
+    cursor: pointer;
+}
+
+.side-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.responsive-image {
+    width: 100%;
+    height: auto;
+    max-height: 100vh;
+    object-fit: cover;
+}
+
+/* ✅ RESPONSIVE - Hide Side Image on Mobile */
+@media screen and (max-width: 900px) {
+    .side-img {
+        display: none;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form {
+        padding: 40px 20px;
+        width: 100%;
+    }
+
+    .inputForm,
+    .button-submit,
+    .btn {
+        width: 100%;
+    }
+}
