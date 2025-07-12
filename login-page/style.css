@@ -155,9 +155,9 @@ body {
 }
 
 .side-img {
-    flex: 1;
+    flex: 1 ;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -168,7 +168,7 @@ body {
     object-fit: cover;
 }
 
-/* ✅ RESPONSIVE - Hide Side Image on Mobile */
+
 @media screen and (max-width: 900px) {
     .side-img {
         display: none;
