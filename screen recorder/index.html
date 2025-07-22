@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Screen Recorder</title>
+</head>
+<body>
+  <button id="startRecording">Start Recording</button>
+  <button id="stopRecording" disabled>Stop Recording</button>
+  <video id="recordedVideo" controls></video>
+
+  <script>
+    let mediaRecorder;
+    let recordedChunks = [];
+
+    const startRecordingButton = document.getElementById('startRecording');
+    const stopRecordingButton = document.getElementById('stopRecording');
+    const recordedVideo = document.getElementById('recordedVideo');
+
+    startRecordingButton.addEventListener('click', startRecording);
+    stopRecordingButton.addEventListener('click', stopRecording);
+
+    async function startRecording() {
+      const stream = await navigator.mediaDevices.getDisplayMedia();
+      mediaRecorder = new MediaRecorder(stream);
+
+      mediaRecorder.ondataavailable = (event) => {
+        if (event.data.size > 0) {
+          recordedChunks.push(event.data);
+        }
+      };
+
+      mediaRecorder.onstop = () => {
+        const blob = new Blob(recordedChunks, { type: 'video/webm' });
+        recordedChunks = [];
+
+        const videoURL = URL.createObjectURL(blob);
+        recordedVideo.src = videoURL;
+      };
+
+      mediaRecorder.start();
+      startRecordingButton.disabled = true;
+      stopRecordingButton.disabled = false;
+    }
+
+    function stopRecording() {
+      mediaRecorder.stop();
+      startRecordingButton.disabled = false;
+      stopRecordingButton.disabled = true;
+    }
+  </script>
+</body>
+</html>

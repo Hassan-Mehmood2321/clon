@@ -1,0 +1,11 @@
+h1{
+    text-align: center;
+    font-size: 90px;
+    color: aquamarine;
+    background-color: black;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
